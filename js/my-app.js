@@ -16,14 +16,14 @@ var myApp = new Framework7({
 var $$ = Dom7;
 
 // Defined as function "getrandom"
-function getCountries() {
-  $$.getJSON('countries.json', function (json) {
-   myApp.template7Data.countrylist =   json ;
+function loadParts() {
+  $$.getJSON('parts.json', function (json) {
+   myApp.template7Data.partlist =   json ;
   });
 };
 
 
-getCountries();
+loadParts();
 
 // Add main View
 var mainView = myApp.addView('.view-main', {
