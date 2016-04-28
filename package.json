@@ -1,0 +1,23 @@
+{
+  "name": "projectlux",
+  "version": "1.0.0",
+  "description": "An Application to allow people to correctly maintain their bikes!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EbbAndFlow/Lux.git"
+  },
+  "author": "Ebb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EbbAndFlow/Lux/issues"
+  },
+  "homepage": "https://github.com/EbbAndFlow/Lux#readme",
+  "dependencies": {
+    "framework7": "^1.4.2",
+    "http-server": "^0.9.0"
+  }
+}

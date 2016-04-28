@@ -1,0 +1,31 @@
+<div class="navbar">
+<div class="navbar-inner">
+<div class="left sliding"><a href="#" class="back link"> <i class="icon
+icon-back"></i>
+<span>Back</span>
+</a>
+
+</div>
+
+</div>
+<div class="pages">
+<div datapage="countrylist" class="page">
+<div class="page-content">
+<div class="content-block-title">
+Choose a Component</div>
+<div class="list-block">
+<ul> {{#each this}}
+<li>
+<a href="detail.html" class="item-content
+item-link" data-context-name="countrylist.{{@index}} ">
+<div class="item-inner">
+<div class="item-title">
+{{Country}} </div>
+</div>
+</a>
+</li> {{/each}}
+</ul>
+</div>
+</div>
+</div>
+</div>
