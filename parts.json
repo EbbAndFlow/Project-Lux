@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "Name": "Nocturne",
+    "Tyres": "26 inch",
+    "Paint": "Pink",
+    "AlloyFrame": "Yes",
+    "Framesize": "18 Inch",
+    "Horn": "Yes",
+    "Gears": 18
+  },
+  {
+    "Id": 2,
+    "Name": "The Starkie",
+    "Tyres": "26 inch",
+    "Paint": "Black",
+    "AlloyFrame": "Yes",
+    "Framesize": "20 Inches",
+    "Horn": "Yes",
+    "Gears": 12
+  },
+  {
+    "Id": 3,
+    "Name": "Nasus",
+    "Tyres": "50 inch",
+    "Paint": "Blue",
+    "AlloyFrame": "Yes",
+    "Framesize": "20 Inch",
+    "Horn": "No",
+    "Gears": 4
+  },
+  {
+    "Id": 4,
+    "Name": "Ornstein",
+    "Tyres": "26 inch",
+    "Paint": "Gold",
+    "AlloyFrame": "Yes",
+    "Framesize": "18 Inch",
+    "Horn": "Yes",
+    "Gears": 18
+  },
+  {
+    "Id": 5,
+    "Name": "Lucatiel",
+    "Tyres": "26 inch",
+    "Paint": "Brown",
+    "AlloyFrame": "Yes",
+    "Framesize": "18 Inch",
+    "Horn": "No",
+    "Gears": 18
+  }
+]
