@@ -1,52 +1,42 @@
 [
   {
     "Id": 1,
-    "Name": "Nocturne",
-    "Tyres": "26 inch",
-    "Paint": "Pink",
-    "AlloyFrame": "Yes",
-    "Framesize": "18 Inch",
-    "Horn": "Yes",
-    "Gears": 18
+    "Name": "Handlebar",
+    "Description": "Bicycle handlebar or bicycle handlebars refers to the steering mechanism for bicycles; the equivalent of a steering wheel. Besides steering, handlebars also often support a portion of the rider's weight, depending on their riding position, and provide a convenient mounting place for brake levers, shift levers, cyclocomputers, bells, etc. Handlebars are attached to a bike's stem which in turn attaches to the fork."
   },
   {
     "Id": 2,
-    "Name": "The Starkie",
-    "Tyres": "26 inch",
-    "Paint": "Black",
-    "AlloyFrame": "Yes",
-    "Framesize": "20 Inches",
-    "Horn": "Yes",
-    "Gears": 12
+    "Name": "Tyres",
+    "Description": "A bicycle tire is a tire that fits on the wheel of a bicycle, unicycle, tricycle, quadracycle, bicycle trailer, or trailer bike. They may also be used on wheelchairs and handcycles, especially for racing."
   },
   {
     "Id": 3,
-    "Name": "Nasus",
-    "Tyres": "50 inch",
-    "Paint": "Blue",
-    "AlloyFrame": "Yes",
-    "Framesize": "20 Inch",
-    "Horn": "No",
-    "Gears": 4
+    "Name": "Crankset",
+    "Description": "The crankset is the component of a bicycle drivetrain that converts the reciprocating motion of the rider's legs into rotational motion used to drive the chain or belt, which in turn drives the rear wheel."
   },
   {
     "Id": 4,
-    "Name": "Ornstein",
-    "Tyres": "26 inch",
-    "Paint": "Gold",
-    "AlloyFrame": "Yes",
-    "Framesize": "18 Inch",
-    "Horn": "Yes",
-    "Gears": 18
+    "Name": "Drivetrain",
+    "Description": "Bicycle drivetrain systems are used to transmit power on bicycles, tricycles, quadracycles, unicycles, or other human-powered vehicles from the riders to the drive wheels. Most also include some type of a mechanism to convert speed and torque via gear ratios."
   },
   {
     "Id": 5,
-    "Name": "Lucatiel",
-    "Tyres": "26 inch",
-    "Paint": "Brown",
-    "AlloyFrame": "Yes",
-    "Framesize": "18 Inch",
-    "Horn": "No",
-    "Gears": 18
+    "Name": "Saddle",
+    "Description": "A bicycle saddle, often called a seat, is one of three contact points on an upright bicycle, the others being the pedals and the handlebars."
+  },
+  {
+    "Id": 6,
+    "Name": "Suspension",
+    "Description": "Bicycle suspension is the system, or systems, used to suspend the rider and bicycle in order to insulate them from the roughness of the terrain. Bicycle suspension is used primarily on mountain bikes, but is also common on hybrid bicycles."
+  },
+  {
+    "Id": 7,
+    "Name": "Brakes",
+    "Description": "A bicycle brake reduces the speed of a bicycle or prevents it from moving. The three main types are: rim brakes, disc brakes, and drum brakes. There have been various types of brakes used throughout history, and several are still in use today. Most bicycle brake systems consist of three main components: a mechanism for the rider to apply the brakes, such as brake levers or pedals; a mechanism for transmitting that signal, such as Bowden cables, hydraulic hoses, rods, or the bicycle chain; and the brake mechanism itself, a caliper or drum, to press two or more surfaces together in order to convert, via friction, kinetic energy of the bike and rider into thermal energy to be dissipated."
+  },
+  {
+    "Id": 8,
+    "Name": "Derailleurs",
+    "Description": "Derailleur gears are a variable-ratio transmission system commonly used on bicycles, consisting of a chain, multiple sprockets of different sizes, and a mechanism to move the chain from one sprocket to another."
   }
 ]
