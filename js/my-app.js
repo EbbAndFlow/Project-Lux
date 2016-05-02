@@ -15,47 +15,21 @@ var myApp = new Framework7({
 // Export selectors engine
 var $$ = Dom7;
 
-//new below
+// Defined as function "getrandom"
+function loadParts() {
+  $$.getJSON('parts.json', function (json) {
+   myApp.template7Data.partlist =   json ;
+  });
+};
 
-var todoData = localStorage.td7Data ? JSON.parse(localStorage.td7Data) : [];
 
-$$('.popup').on('open', function () {
-    $$('body').addClass('with-popup');
+loadParts();
+
+// Add main View
+var mainView = myApp.addView('.view-main', {
+    // Enable dynamic Navbar
+    dynamicNavbar: true,
 });
-$$('.popup').on('opened', function () {
-    $$(this).find('input[name="title"]').focus();
-});
-$$('.popup').on('close', function () {
-    $$('body').removeClass('with-popup');
-    $$(this).find('input[name="title"]').blur().val('');
-});
-
-// Popup colors
-$$('.popup .color').on('click', function () {
-    $$('.popup .color.selected').removeClass('selected');
-    $$(this).addClass('selected');
-});
-
-// Add Task
-$$('.popup .add-task').on('click', function () {
-    var title = $$('.popup input[name="title"]').val().trim();
-    if (title.length === 0) {
-        return;
-    }
-    var color = $$('.popup .color.selected').attr('data-color');
-    todoData.push({
-        title: title,
-        color: color,
-        checked: '',
-        id: (new Date()).getTime()
-    });
-    localStorage.td7Data = JSON.stringify(todoData);
-    buildTodoListHtml();
-    myApp.closeModal('.popup');
-});
-
-
-//NOT WORKING
 
 $$('.get-storage-data').on('click', function() {
   var storedData = myApp.formGetData('my-form2');
@@ -75,26 +49,10 @@ $$('.delete-storage-data').on('click', function() {
 $$('.save-storage-data').on('click', function() {
   var storedData = myApp.formStoreData('my-form2', {
     'name': 'John',
-    'date': 'john@doe.com',
-    'inspection': ['yes'],
-    'notes': 'I am the Tide',
+    'email': 'john@doe.com',
+    'gender': 'female',
+    'switch': ['yes'],
+    'slider': 10
   });
   alert('Form data replaced, refresh browser to see changes')
-});
-
-
-// Defined as function "getrandom"
-function loadParts() {
-  $$.getJSON('parts.json', function (json) {
-   myApp.template7Data.partlist =   json ;
-  });
-};
-
-
-loadParts();
-
-// Add main View
-var mainView = myApp.addView('.view-main', {
-    // Enable dynamic Navbar
-    dynamicNavbar: true,
 });
