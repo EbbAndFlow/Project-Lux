@@ -31,28 +31,34 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true,
 });
 
-$$('.get-storage-data').on('click', function() {
-  var storedData = myApp.formGetData('my-form2');
-  if(storedData) {
-    alert(JSON.stringify(storedData));
-  }
-  else {
-    alert('There is no stored data for this form yet. Try to change any field')
-  }
-});
+//Event listener
 
-$$('.delete-storage-data').on('click', function() {
-  var storedData = myApp.formDeleteData('my-form2');
-  alert('Form data deleted')
-});
+$$(document).on('pageInit', function (e) {
 
-$$('.save-storage-data').on('click', function() {
-  var storedData = myApp.formStoreData('my-form2', {
-    'name': 'John',
-    'email': 'john@doe.com',
-    'gender': 'female',
-    'switch': ['yes'],
-    'slider': 10
+  $$('.get-storage-data').on('click', function() {
+    var storedData = myApp.formGetData('my-form2');
+    if(storedData) {
+      alert(JSON.stringify(storedData));
+    }
+    else {
+      alert('There is no stored data for this form yet. Try to change any field')
+    }
   });
-  alert('Form data replaced, refresh browser to see changes')
-});
+
+  $$('.delete-storage-data').on('click', function() {
+    var storedData = myApp.formDeleteData('my-form2');
+    alert('Form data deleted')
+  });
+
+  $$('.save-storage-data').on('click', function() {
+    var storedData = myApp.formStoreData('my-form2', {
+      'title': 'John',
+      'name': 'john@doe.com',
+      'date': 'female',
+      'inspection': ['yes'],
+      'notes': 'Hey'
+    });
+    alert('Form data replaced, refresh browser to see changes')
+  });
+
+})
