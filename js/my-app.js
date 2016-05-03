@@ -15,6 +15,7 @@ var myApp = new Framework7({
 // Export selectors engine
 var $$ = Dom7;
 
+<<<<<<< HEAD
 //new below
 
 var todoData = localStorage.td7Data ? JSON.parse(localStorage.td7Data) : [];
@@ -83,6 +84,8 @@ $$('.save-storage-data').on('click', function() {
 });
 
 
+=======
+>>>>>>> refs/remotes/origin/Framwork-7-Verfied-Change
 // Defined as function "getrandom"
 function loadParts() {
   $$.getJSON('parts.json', function (json) {
@@ -98,3 +101,35 @@ var mainView = myApp.addView('.view-main', {
     // Enable dynamic Navbar
     dynamicNavbar: true,
 });
+
+//Event listener
+
+$$(document).on('pageInit', function (e) {
+
+  $$('.get-storage-data').on('click', function() {
+    var storedData = myApp.formGetData('my-form2');
+    if(storedData) {
+      alert(JSON.stringify(storedData));
+    }
+    else {
+      alert('There is no stored data for this form yet. Try to change any field')
+    }
+  });
+
+  $$('.delete-storage-data').on('click', function() {
+    var storedData = myApp.formDeleteData('my-form2');
+    alert('Form data deleted')
+  });
+
+  $$('.save-storage-data').on('click', function() {
+    var storedData = myApp.formStoreData('my-form2', {
+      'title': 'John',
+      'name': 'john@doe.com',
+      'date': 'female',
+      'inspection': ['yes'],
+      'notes': 'Hey'
+    });
+    alert('Form data replaced, refresh browser to see changes')
+  });
+
+})

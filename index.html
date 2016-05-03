@@ -6,37 +6,36 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>Lux</title>
-    <!-- Path to Framework7 Library CSS-->
     <link rel="stylesheet" href="node_modules/framework7/dist/css/framework7.ios.min.css">
-    <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="node_modules/framework7/dist/css/framework7.material.min.css">
-    <!-- Path to Framework7 color related styles, Material Theme -->
     <link rel="stylesheet" href="node_modules/framework7/dist/css/framework7.material.colors.min.css">
 
-
   </head>
-  <body>
-    <!-- Status bar overlay for fullscreen mode-->
+  <body class="theme-pink">
     <div class="statusbar-overlay"></div>
-
-    <!-- Views-->
     <div class="views">
-      <!-- Your main view, should have "view-main" class-->
       <div class="view view-main">
-        <!-- Top Navbar-->
         <div class="navbar">
           <div class="navbar-inner">
             <div class="center sliding">Main Menu</div>
-
           </div>
         </div>
-
         <div class="pages navbar-through toolbar-through">
 
           <!-- Index Page-->
           <div data-page="index" class="page">
             <div class="page-content">
               <div class="content-block">
+              </div>
+              <div class="card ks-card-header-pic">
+                <div style="background-image:url(https://images2.alphacoders.com/587/587002.jpg)" valign="bottom" class="card-header color-white no-border">New to Lux?</div>
+                <div class="card-content">
+                  <div class="card-content-inner">
+                    <p class="color-gray">Posted on May 2, 2016</p>
+                    <p>A short guide that will help you use the application to its true potential!</p>
+                  </div>
+                </div>
+                <div class="card-footer"><a href="#" class="link">Read more</a></div>
               </div>
               <div class="list-block">
                 <ul>
@@ -46,13 +45,13 @@
                       </div>
                     </a>
                   </li>
-                  <li><a href="entry.html" data-context-name="partlist" class="item-link item-content">
+                  <li><a href="entrywelcome.html" class="item-link item-content">
                     <div class="item-inner">
                         <div class="item-title">Safety Checker</div>
                       </div>
                     </a>
                   </li>
-                  <li><a href="about.html" data-context-name="partlist" class="item-link item-content">
+                  <li><a href="about.html" class="item-link item-content">
                     <div class="item-inner">
                         <div class="item-title">About</div>
                       </div>
@@ -67,8 +66,6 @@
 
       </div>
     </div>
-
-
 
 
     <!-- Path to Framework7 Library JS-->
